@@ -1,0 +1,21 @@
+#updateBtn
+{
+    display: none;
+}
+#productNameError
+{
+    display: none;
+    /* padding: .75rem 0rem; */
+}
+#productPriceError
+{
+    display: none;
+}
+#productCatError
+{
+    display: none;
+}
+#productDescError
+{
+    display: none;
+}

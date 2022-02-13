@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index_style.css">
+</head>
+
+<body>
+
+
+    <div class="parent w-75 mx-auto my-5 ">
+        <div class="form-group">
+            <label for="productName">ProductName</label>
+            <input required type="text" class="form-control" id="productName">
+            <label for="productName" id="productNameError" class="alert alert-danger"></label>
+        </div>
+        <div class="form-group">
+            <label for="productPrice">ProductPrice</label>
+            <input type="number" class="form-control" id="productPrice">
+            <label for="productPrice" id="productPriceError" class="alert alert-danger"></label>
+        </div>
+        <div class="form-group">
+            <label for="productCat">ProductCategory</label>
+            <input type="text" class="form-control" id="productCat">
+            <label for="productCat" class="alert alert-danger" id="productCatError"></label>
+        </div>
+        <div class="form-group">
+            <label for="productDesc">ProductDesc</label>
+            <textarea type="text" class="form-control" id="productDesc"></textarea>
+            <label for="productDesc" id="productDescError" class="alert alert-danger"></label>
+        </div>
+        <button id="mainBtn" class="btn btn-primary my-2" onclick="addProduct()"> Add Product</button>
+        <button id="updateBtn" class="btn btn-warning my-2" onclick="updateProduct()"> Update Product</button>
+        <input onkeyup="searchProduct(this.value)" type="text" placeholder="Search...." class="form-control my-5 w-75 mx-auto" id="search">
+
+        <table class="table text-center  py-3">
+            <thead>
+                <th>Number of Products</th>
+                <th>product Name</th>
+                <th>product Price</th>
+                <th>product Category</th>
+                <th class="w-25">product Desc</th>
+                <th>Update</th>
+                <th>Delete</th>
+            </thead>
+            <tbody id="displayProductHere">
+
+            </tbody>
+        </table>
+    </div>
+
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/mine.js"></script>
+</body>
+
+</html>
